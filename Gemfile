@@ -1,5 +1,17 @@
 source 'https://rubygems.org'
 
+#specify what gem to use in which enviroment
+group :production do
+	gem 'pg'
+end
+
+gem 'rails_12factor', group: :production
+
+group :development do
+	# Use sqlite3 as the database for Active Record
+	gem 'sqlite3'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
