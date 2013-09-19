@@ -1,8 +1,14 @@
 Blog::Application.routes.draw do
   
-  resources :posts
+  resources :pins
+
+  get "pages/why"
+  get "pages/home"
   
-  root to: "welcome#index"
+  #root to: "welcome#index"
+  root to: "pages#home" 
+
+  resources :posts
 end
   
   # get "welcome/index"
