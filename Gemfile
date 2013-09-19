@@ -13,6 +13,9 @@ group :development do
 end
 
 
+#heroku told me to
+gem 'rails_12factor'
+
 # Bootstrap Awesomeness
 gem 'bootstrap-sass', '~> 2.3.2.1'
 
