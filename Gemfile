@@ -12,6 +12,8 @@ group :development do
 	gem 'sqlite3'
 end
 
+# coderwall rails 4 method for active admin
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
 
 #heroku told me to
 gem 'rails_12factor'
